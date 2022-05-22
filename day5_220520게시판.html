@@ -1,0 +1,151 @@
+**게시판3 덧글쓰기와 textarea부분 같은선상에 두는법 질문드립니다**
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: 굵은돋움;
+      }
+      hr {
+        width: 100%;
+        border-color: black;
+        border-width: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .td0 {
+        background-color: rgb(218, 217, 217);
+      }
+      .td1 {
+        border-left: none;
+        text-align: right;
+        background-color: rgb(218, 217, 217);
+      }
+      .td2 {
+        border-bottom: 1px;
+      }
+      .td3 {
+        /* border-left: none; */
+        /* text-align: right; */
+        display: flex;
+        background-color: rgb(218, 217, 217);
+        /* align-content: flex-end;
+        flex-direction: column-reverse; */
+        /* align-content: flex-end; */
+      }
+      .divBlock {
+        display: inline-block;
+      }
+      textarea {
+        margin: 1px;
+      }
+      .button1 {
+        border: 0;
+        font-size: large;
+        background: linear-gradient(
+          135deg,
+          rgba(197, 222, 234, 1) 0%,
+          rgba(138, 187, 215, 1) 31%,
+          rgba(6, 109, 171, 1) 100%
+        );
+        color: white;
+        font-weight: bold;
+        border-radius: 10%;
+        outline-color: gray;
+      }
+      .button2 {
+        border: 0;
+        font-size: large;
+        background: linear-gradient(
+          135deg,
+          #4c4c4c 0%,
+          #595959 12%,
+          #666666 25%,
+          #474747 39%,
+          #2c2c2c 50%,
+          #000000 51%,
+          #111111 60%,
+          #2b2b2b 76%,
+          #1c1c1c 91%,
+          #131313 100%
+        );
+        color: white;
+        font-weight: bold;
+        border-radius: 10%;
+      }
+      .button3 {
+        border: 0;
+        font-size: large;
+        background: linear-gradient(
+          135deg,
+          #4c4c4c 0%,
+          #595959 12%,
+          #666666 25%,
+          #474747 39%,
+          #2c2c2c 50%,
+          #000000 51%,
+          #111111 60%,
+          #2b2b2b 76%,
+          #1c1c1c 91%,
+          #131313 100%
+        );
+        color: white;
+        font-weight: bold;
+        border-radius: 10%;
+        height: 30;
+        padding: 50px 30px;
+      }
+      footer {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div di="header"></div>
+    <h1>★ 게시판 ★</h1>
+    <hr />
+    <form>
+      <table>
+        <tr>
+          <td class="td0" height="50">게시글1입니다.</td>
+          <td class="td1" height="50">김준석 I 조회:15 I 2022-05-16 (9:00)</td>
+        </tr>
+        <tr>
+          <td class="td2" colspan="2">
+            <br />
+            게시판 3가지 만들기 끝났당!<br />
+            게시판 3가지 만들기 끝났당!<br />
+            게시판 3가지 만들기 끝났당!<br />
+            게시판 3가지 만들기 끝났당!<br />
+            게시판 3가지 만들기 끝났당!<br />
+            <br />
+          </td>
+        </tr>
+        <tr>
+          <td class="td3"></td>
+          <td class="td3">
+            <div class="divBlock">
+              <textarea cols="120" rows="10"></textarea>
+            </div>
+            <div class="divBlock">
+              <button class="button3">덧글쓰기</button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <br />
+    <footer>
+      <button class="button1">삭제</button>
+      <button class="button1">목록</button>
+      <button class="button2">글쓰기</button>
+    </footer>
+    <br />
+  </body>
+</html>
